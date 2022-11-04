@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    margin: auto;
+    padding: 0 20px;
+}
+
+.flex{
+    display: flex;
+}
+
+ul{
+    padding-bottom: 20px;
+}
+li{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+}

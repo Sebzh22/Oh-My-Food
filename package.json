@@ -1,0 +1,21 @@
+{
+  "name": "oh-my-food",
+  "version": "1.0.0",
+  "description": "Réalisation du site web de Oh-My-Food",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./css/style.css --style expanded",
+    "prefix":"postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebzh22/Oh-My-Food.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "Last 4 versions",
+  "bugs": {
+    "url": "https://github.com/Sebzh22/Oh-My-Food/issues"
+  },
+  "homepage": "https://github.com/Sebzh22/Oh-My-Food#readme"
+}

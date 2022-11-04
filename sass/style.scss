@@ -1,3 +1,10 @@
-body{
-    background: color;
-}
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+@import "./utils/functions.scss";
+@import "./base/base.scss";
+@import "./base/typography.scss";
+@import "./base/responsive.scss";
+@import "./layouts/footer.scss";
+
+
+
