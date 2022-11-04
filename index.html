@@ -15,7 +15,7 @@
     <!--Header-->
     <header>
         <div class="header">
-            <img src="images\logo\ohmyfood.png" alt="logo Oh my Food">
+            <img src="images\logo\ohmyfood.png" alt="logo Oh my Food" class="header__img">
         </div>
 
     </header>
@@ -25,42 +25,43 @@
     <main>
 
         <section class="search">
-            <div>
-                <i class="fa-solid fa-location-dot"></i>
+            <div class="flex search__content">
+                <i class="fa-solid fa-location-dot search__icon"></i>
                 <p> Paris, Belleville</p>
             </div>
         </section>
 
-        <section>
-            <h1>
+        <section class="description">
+            <h1 class="description__element">
                 Réservez le menu qui vous convient
             </h1>
-            <p>
+            <p class="description__element description__element--txt">
                 Découvrez des restaurants d'exception, sélectionnés par nos soins.
             </p>
-            <button>
-
-            </button>         
+            
+            <button type="submit" class="btn">
+                    Explorer nos restaurants
+            </button>          
         </section>
 
-        <section class="wrapper">
+        <section class="wrapper functioning">
             <h2>
                 Fonctionnement
             </h2>
             <div>
-                <div>
+                <div class="flex functioning__step">
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <p>
                         Choisissez un restaurant
                     </p>
                 </div>
-                <div>
+                <div class="flex functioning__step">
                     <i class="fa-solid fa-list-ul"></i>
                     <p>
                         Composez votre menu
                     </p>
                 </div>
-                <div>
+                <div class="flex functioning__step">
                     <i class="fa-sharp fa-solid fa-store"></i>
                     <p>
                         Dégustez au restaurant
@@ -70,77 +71,85 @@
             
         </section>
 
-        <section class="wrapper">
+        <section class="wrapper restaurant">
             <h2>
                 Restaurants
             </h2>
 
-            <div>
-                <div>
-                    <img src="" alt="Restaurant La palette du goût">
-                </div>
-                <div>
+            <div class="restaurant__card">
+                <a href="./la-palette-du-gout.html">
                     <div>
-                        <h3>
-                            La palette du goût
-                        </h3>
-                        <p>
-                            Ménilmontant
-                        </p>
+                        <img src="./images/restaurants/Little/jay-wennington-la-palette-du-gout.jpg" alt="Restaurant La palette du goût" class="restaurant__card--img">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
+                    <div class="flex restaurant__card--content">
+                        <div>
+                            <h3>
+                                La palette du goût
+                            </h3>
+                            <p>
+                                Ménilmontant
+                            </p>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </a>
             </div>
 
-            <div>
-                <div>
-                    <img src="" alt="Restaurant La note enchantée">
-                </div>
-                <div>
+            <div class="restaurant__card">
+                <a href="./la-note-enchantee.html">
                     <div>
-                        <h3>
-                            La note enchantée
-                        </h3>
-                        <p>
-                            Charonne
-                        </p>
+                        <img src="./images/restaurants/Little/la-note-enchantee.jpg" alt="Restaurant La note enchantée" class="restaurant__card--img">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
+                    <div class="flex restaurant__card--content">
+                        <div>
+                            <h3>
+                                La note enchantée
+                            </h3>
+                            <p>
+                                Charonne
+                            </p>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </a>
             </div>
 
-            <div>
-                <div>
-                    <img src="" alt="Restaurant À la française">
-                </div>
-                <div>
+            <div class="restaurant__card">
+                <a href="./a-la-francaise.html">
                     <div>
-                        <h3>
-                            À la française
-                        </h3>
-                        <p>
-                            Cité Rouge
-                        </p>
+                        <img src="./images/restaurants/Little/toa-heftiba-a-la-francaise.jpg" alt="Restaurant À la française" class="restaurant__card--img">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
+                    <div class="flex restaurant__card--content">
+                        <div>
+                            <h3>
+                                À la française
+                            </h3>
+                            <p>
+                                Cité Rouge
+                            </p>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </a>
             </div>
 
-            <div>
-                <div>
-                    <img src="" alt="Restaurant Le délice des sens">
-                </div>
-                <div>
+            <div class="restaurant__card">
+                <a href="./le-delice-des-sens.html">
                     <div>
-                        <h3>
-                            Le délice des sens
-                        </h3>
-                        <p>
-                            Folie-Méricourt
-                        </p>
+                        <img src="./images/restaurants/Little/louis-hansel-le-delice-des-sens.jpg" alt="Restaurant Le délice des sens" class="restaurant__card--img">
                     </div>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
+                    <div class="flex restaurant__card--content">
+                        <div>
+                            <h3>
+                                Le délice des sens
+                            </h3>
+                            <p>
+                                Folie-Méricourt
+                            </p>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -170,7 +179,7 @@
                     <a href="#">Mentions légales</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="mailto:seb.lecornu@gmail.com">Contact</a>
                 </li>
             </ul>
         </div>

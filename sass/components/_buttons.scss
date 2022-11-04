@@ -1,3 +1,13 @@
-.btn {
-    @include btn
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    display: block;
+    margin: auto;
+    padding: 15px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(to top left, #9356DC, #ff79da);
+    box-shadow: 4px 4px 7px #d3d1d1;
 }
