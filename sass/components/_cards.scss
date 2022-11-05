@@ -1,5 +1,5 @@
 .restaurant{
-    background-color: #f7f7f7;
+    background-color: $background-light;
     &__card{
         width: 100%;
         height: 270px;
@@ -23,9 +23,6 @@
         width: 40px;
         font-size: 25px;
         font-weight: 100;
-        &::selection{
-            background: linear-gradient(to top left, #9356DC, #ff79da);
-        }
     }
     p{
         font-weight: 300;
