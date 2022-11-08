@@ -1,0 +1,32 @@
+.menu{
+    background-color: $background-light;
+    position: relative;
+    top: -45px;
+    border-radius: 40px 40px 0 0;
+
+    &__img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    &__subtitle{
+        text-transform: uppercase;
+    }
+
+    &__card{
+        background-color: #ffffff;
+        width: 380px;
+        height: 70px;
+        border-radius: 15px;
+        box-shadow: 4px 4px 7px #d3d1d1;
+        padding: 10px 30px 10px 10px;
+        line-height: 25px;
+        margin-bottom: 15px;
+
+        &--price{
+            float: right;
+            font-weight: 700;
+        }
+    }
+}

@@ -1,13 +1,15 @@
-@import "./utils/variables.scss";
-@import "./utils/mixins.scss";
-@import "./utils/functions.scss";
-@import "./base/base.scss";
-@import "./base/typography.scss";
-@import "./base/responsive.scss";
-@import "./layouts/header.scss";
-@import "./layouts/footer.scss";
-@import "./pages/main.scss";
-@import "./components/buttons.scss";
-@import "./components/cards.scss";
+@import "./utils/_variables.scss";
+@import "./utils/_mixins.scss";
+@import "./utils/_functions.scss";
+@import "./base/_base.scss";
+@import "./base/_typography.scss";
+@import "./base/_responsive.scss";
+@import "./layouts/_header.scss";
+@import "./layouts/_footer.scss";
+@import "./pages/_main.scss";
+@import "./components/_buttons.scss";
+@import "./components/_cards.scss";
+@import "./components/_filter.scss";
+@import "./components/_menu.scss";
 
 

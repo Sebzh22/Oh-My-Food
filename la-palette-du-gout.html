@@ -4,7 +4,7 @@
         <title>Site Oh My Food</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./CSS/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap" rel="stylesheet">
@@ -14,13 +14,105 @@
 
     <body>
         <!--Header-->
-        <header>
+        <header class="wrapper">
+            <a href="index.html">
+                <i class="fa-solid fa-arrow-left header__return"></i>
+            </a>
             <div class="header">
                 <img src="images\logo\ohmyfood.png" alt="logo Oh my Food" class="header__img">
             </div>
     
         </header>
 
+    <!--Main Content-->
 
+    <main>
+
+        <div>
+            <img src="./images/restaurants/Little/jay-wennington-la-palette-du-gout.jpg" alt="Photo restaurant La Palette du Gout" class="menu__img">
+        </div>
+        <section class="menu wrapper">
+            <div class="menu__title flex">
+                <h1 class="font-logo">
+                    La palette du goût
+                </h1>
+                <i class="fa-regular fa-heart heart--icon"></i>
+                <i class="fa-solid fa-heart heart--animation"></i>
+            </div>
+            <div class="menu__subtitle">
+                <h2>
+                    Entrées
+                </h2>
+            </div>
+            <div class="menu__list flex">
+                <div class="menu__card">
+                    <h3>
+                        Fricassée d'escargots
+                    </h3>
+                    <span>
+                        Au piment d'Espelette
+                    </span>
+                    <span class="menu__card--price">
+                        25€
+                    </span>
+                </div>
+                <div class="menu__card">
+                    <h3>
+                        Foie gras de canard mi-cuit
+                    </h3>
+                    <span>
+                        Et ses copeaux de truffe noire
+                    </span>
+                    <span class="menu__card--price">
+                        35€
+                    </span>
+                </div>
+                <div class="menu__card">
+                    <h3>
+                        Oeuf au plat
+                    </h3>
+                    <span>
+                        Assaisonné à la truffe sur lit de carottes
+                    </span>
+                    <span class="menu__card--price">
+                        20€
+                    </span>
+                </div>
+            </div>
+        </section>
+
+    
+    </main>
+
+        <footer class="wrapper footer">
+            <div class="footer__title">
+                <h4 class="font-logo">
+                    ohmyfood
+                </h4>
+            </div>
+            <div class="footer__nav">
+                    <a href="#" class="flex">
+                            <i class="fa-solid fa-utensils footer__icon"></i>
+                            <p>
+                                Proposer un restaurant
+                            </p>
+                    </a>
+                    <a href="#" class="flex">
+                            <i class="fa-solid fa-handshake-angle footer__icon"></i>
+                            <p>
+                                Devenir partenaire
+                            </p>
+                    </a>
+                    <a href="#">
+                            Mentions légales 
+                    </a>
+                    <br>
+                    <a href="mailto:seb.lecornu@gmail.com">
+                           Contact
+                    </a>
+            </div>
+    
+        </footer>
+    </body>
 
 </html>
