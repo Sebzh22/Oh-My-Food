@@ -14,26 +14,14 @@
     padding-bottom: 50px;
     &__element{
         text-align: center;
-        padding-bottom: 15px;
+        padding-top: 30px;
         &--txt{
             font-weight: 300;
         }
     }
 }
 
-.functioning{
-    padding-bottom: 50px;
-    &__step{
-        background-color: $background-light;
-        
-        &:hover{
-            background-color: #9356dc;
-            i{
-                color: $color-primary;
-            }
-        }
-    }
-}
+
 
 
 

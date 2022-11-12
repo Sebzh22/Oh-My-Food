@@ -10,4 +10,11 @@
     border-radius: 50px;
     background: linear-gradient(to top left, $color-primary, $color-secondary);
     box-shadow: 4px 4px 7px #d3d1d1;
+    cursor: pointer;
+    transition: all 1000ms;
+    opacity: 1;
+    &:hover{
+        opacity: 0.8;
+        box-shadow: 10px 10px 10px #919191;
+    }
 }
