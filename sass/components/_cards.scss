@@ -1,6 +1,7 @@
 .restaurant{
     background-color: $background-light;
     &__card{
+        position: relative;
         width: 450px;
         height: 280px;
         margin: auto;
@@ -20,18 +21,13 @@
             line-height: 23px;
         }
     }
-    i{
-        width: 40px;
-        font-size: 25px;
-    }
 }
 
 .new{
-    position: relative;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     &--txt{
-        position: absolute;
-        top: 20px;
-        right: 20px;
         background-color: $color-tertiary;
         color: $darken-color-tertiary;
         font-size: 18px;
@@ -40,11 +36,3 @@
     }
 }
 
-.heart{
-    &--icon{
-        color: blue;
-    }
-    &--animation{
-        color: linear-gradient($color-primary, $color-secondary);
-    }
-}

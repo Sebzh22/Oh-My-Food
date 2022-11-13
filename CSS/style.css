@@ -130,6 +130,7 @@ p {
   background-color: #F7F7F7;
 }
 .restaurant__card {
+  position: relative;
   width: 450px;
   height: 280px;
   margin: auto;
@@ -149,30 +150,18 @@ p {
   color: #000000;
   line-height: 23px;
 }
-.restaurant i {
-  width: 40px;
-  font-size: 25px;
-}
 
 .new {
-  position: relative;
-}
-.new--txt {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+.new--txt {
   background-color: #99E2D0;
   color: #2b987d;
   font-size: 18px;
   font-weight: 700;
   padding: 7px 14px;
-}
-
-.heart--icon {
-  color: blue;
-}
-.heart--animation {
-  color: linear-gradient(#9356DC, #FF79DA);
 }
 
 .filter__restaurant {
@@ -230,6 +219,7 @@ p {
 
 .menu {
   background-color: #F7F7F7;
+  position: relative;
   top: -45px;
   border-radius: 40px 40px 0 0;
   padding-bottom: 45px;
@@ -268,6 +258,32 @@ p {
 .menu__subtitle--underline {
   border-bottom: 3px #99E2D0 solid;
   padding-bottom: 5px;
+}
+
+.heart {
+  font-size: 25px;
+}
+.heart--icon {
+  position: absolute;
+  opacity: 1;
+  right: 25px;
+  bottom: 25px;
+}
+.heart--icon:hover {
+  opacity: 0;
+}
+.heart--animation {
+  position: absolute;
+  opacity: 0;
+  right: 25px;
+  bottom: 25px;
+  background: -webkit-linear-gradient(210deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0;
+}
+.heart--animation:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
