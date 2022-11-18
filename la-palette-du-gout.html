@@ -36,8 +36,10 @@
                 <h1 class="font-logo">
                     La palette du goût
                 </h1>
-                <i class="fa-regular fa-heart heart--icon"></i>
-                <i class="fa-solid fa-heart heart--animation"></i>
+                <span class="heart">
+                    <i class="fa-regular fa-heart menu__heart--icon"></i>
+                    <i class="fa-solid fa-heart menu__heart--animation"></i>
+                </span>
             </div>
             <div>
                 <div class="menu__subtitle">
@@ -47,27 +49,25 @@
                 </div>
                 <div class="menu__starter flex">
           
-                        <article href="" class="menu__card">
-                            <div class="menu__card--detail">
-                                <h3>
-                                    Fricassée d'escargots
-                                </h3>
-                                <p>
-                                    Au piment d'Espelette
-                                </p>
-                            </div>
-                            <div class="menu__card--price">
-                                <p >
-                                    25€
-                                </p>
-                            </div>
-                            <div class="menu__card--animation">
-                                <div>
-
+                        <article class="menu__card flex">
+                                <div class="menu__card--detail">
+                                    <h3>
+                                        Fricassée d'escargots
+                                    </h3>
+                                    <p>
+                                        Au piment d'Espelette
+                                    </p>
                                 </div>
-                            </div>
-
-                
+                                <div class="menu__card--price">
+                                    <span>
+                                        25€
+                                    </span>
+                                </div>
+                                <div class="menu__card--animation">
+                                    <div>
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </div>
+                                </div>    
                         </article>
                         <article href="" class="menu__card">
                             <h3>
@@ -177,7 +177,7 @@
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn">
+            <button type="submit" class="btn menu__btn">
                 Commander
             </button>
         </section>

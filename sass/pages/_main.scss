@@ -3,6 +3,8 @@
     &__content{
         justify-content: center;
         padding: 12px;
+        font-size: 18px;
+        font-weight: 500;
     }
     &__icon{
         padding-right: 15px;
@@ -11,13 +13,10 @@
 
 .description{
     background-color: $background-light;
-    padding-bottom: 50px;
+    padding: 50px 0;
     &__element{
         text-align: center;
-        padding-top: 30px;
-        &--txt{
-            font-weight: 300;
-        }
+        padding-bottom: 10px;
     }
 }
 

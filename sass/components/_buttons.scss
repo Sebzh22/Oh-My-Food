@@ -5,10 +5,11 @@
     display: block;
     margin: auto;
     padding: 15px 20px;
-    margin-top: 15px;
+    margin-top: 20px;
     border: none;
     border-radius: 50px;
-    background: linear-gradient(to top left, $color-primary, $color-secondary);
+    background: $background-linear;
+    // background: linear-gradient(to top left, $color-primary, $color-secondary);
     box-shadow: 4px 4px 7px #d3d1d1;
     cursor: pointer;
     transition: all 1000ms;

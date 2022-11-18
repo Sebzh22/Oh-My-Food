@@ -8,12 +8,11 @@
         margin-bottom: 20px;
         border-radius: 25px;
         box-shadow: 4px 4px 7px #d3d1d1;
-        font-weight: 700;
         &--number{
             color: #ffffff;
             font-weight: 400;
             text-align: center;
-            padding-top: 3px;
+            padding-top: 2px;
         }
         &--number-block{
             position: absolute;
@@ -27,16 +26,17 @@
         &--icon{
             position: absolute;
             top: 26px;
-            padding-left: 40px;
+            padding-left: 35px;
             width: 80px;
             font-size: 24px;
             color: #7a7a7a;
         }
         &--txt{
             position: absolute;
+            font-size: 18px;
+            font-weight: 600;
             top: 26px;
             left: 80px;
-            font-size: 18px;
             color: #000000;
         }
         &:hover{

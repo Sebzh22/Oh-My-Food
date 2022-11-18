@@ -36,3 +36,10 @@
     }
 }
 
+@media all and (min-width:$medium) and (max-width: $large){
+    .restaurant{
+        &__card{
+            width: 45%;
+        }
+    }
+}

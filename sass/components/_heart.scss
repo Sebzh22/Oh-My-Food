@@ -1,11 +1,12 @@
 .heart{
     font-size: 25px;
+    cursor: pointer;
     &--icon{
         position: absolute;
         opacity: 1;
         right: 25px;
         bottom: 25px;
-        &:hover{
+        &:active{
             opacity: 0;
         }
     }
@@ -14,11 +15,12 @@
         opacity: 0;
         right: 25px;
         bottom: 25px;
-        background: -webkit-linear-gradient(210deg, #9356DC, #FF79DA);
+        background: $background-linear;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 0;
-        &:hover{
+        transition: opacity 400ms;
+        &:active{
             opacity: 1;
         }
     }

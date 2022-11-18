@@ -5,5 +5,6 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $background-light: #F7F7F7;
 $background-dark: #EAEAEA;
+$background-linear: -webkit-linear-gradient(210deg, $color-primary, $color-secondary);
 $lighten-color-primary: lighten($color-primary,30%);
 $darken-color-tertiary: darken($color-tertiary,36%)
