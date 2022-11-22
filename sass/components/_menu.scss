@@ -13,6 +13,7 @@
     }
 
     &__title{
+        display: flex;
         justify-content: space-between;
         padding-top: 20px;
         font-size: 27px;
@@ -24,20 +25,28 @@
         font-weight: 400;
     }
 
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
     &__card{
         background-color: #ffffff;
+        position: relative;
+        display: flex;
         color: #000000;
-        width: 400px;
+        max-width: 380px;
         height: 70px;
         border-radius: 15px;
+        margin-right: 20px;
+        margin-top: 10px;
+        width: 100%;
         box-shadow: $shadow-primary;
-        padding-left: 15px;
-        line-height: 25px;
-        margin: auto;
-        margin-bottom: 15px;
         justify-content: space-between;
         opacity: 0;
         cursor: pointer;
+        overflow: hidden;
         animation: transition 1000ms ease-in-out forwards;
         @for $i from 1 through 12{
             &--#{$i}{
@@ -46,16 +55,22 @@
         }
 
         &--detail{
-            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 310px;
+            margin: 10px 0 12px 10px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
         
         &--price{
-            font-weight: 700;
-            // margin-left: 110px;
-            padding-top: 20px;
+            margin-bottom: 12px;
+            width: 50px;
+            font-weight: bold;
+            display: flex;
+            align-items: flex-end;
         }
 
         &--animation{
@@ -63,7 +78,7 @@
             align-items: center;
             justify-content: center;
             font-size: 25px;
-            width: 0px;
+            width: 60px;
             height: 100%;
             background-color: $color-tertiary;
             color: #ffffff;
@@ -71,16 +86,25 @@
             opacity: 0;
             transition: width 1000ms ease-in-out;
         }
+
+        // &:hover > .menu__card--price{
+        //     transform: translateX(-65px);
+        // }
+        // &:hover > .menu__card--animation{
+        //     transform: translateX(0px);
+        // }
     }
 }
-.menu__card:hover .menu__card--animation{
-    animation: appearance 1s ease-in-out forwards;
-    width: 60px;
-}
 
-.menu__card:hover .icon--rotate{
-    animation: rotate 800ms ease-in-out 300ms reverse;
-}
+
+ .menu__card:hover .menu__card--animation{
+     animation: appearance 1s ease-in-out forwards;
+     width: 60px;
+ }
+
+ .menu__card:hover .icon--rotate{
+     animation: rotate 800ms ease-in-out 300ms reverse;
+ }
 
 .menu__subtitle--underline{
     border-bottom: 3px $color-tertiary solid;
@@ -90,7 +114,7 @@
 .menu__heart--icon{
     position: absolute;
         opacity: 1;
-        right: 40px;
+        right: 50px;
         top: 25px;
         &:active{
             opacity: 0;
@@ -102,7 +126,7 @@
 .menu__heart--animation{
     position: absolute;
         opacity: 0;
-        right: 40px;
+        right: 50px;
         top: 25px;
         background: -webkit-linear-gradient(210deg, #9356DC, #FF79DA);
         -webkit-background-clip: text;
@@ -117,17 +141,17 @@
     width: 200px;
 }
 
-@media all and (min-width:$medium){
-    .menu__card{
-            width:45%;
-    }
-}
+// @media all and (min-width:$medium){
+//     .menu__card{
+//             width:45%;
+//     }
+// }
 
-@media all and (min-width:$large){
-    .menu__card{
-            width:32%;
-    }
-}
+// @media all and (min-width:$large){
+//     .menu__card{
+//             width:32%;
+//     }
+// }
 
 @keyframes transition {
     0%{

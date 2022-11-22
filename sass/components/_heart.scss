@@ -6,9 +6,6 @@
         opacity: 1;
         right: 25px;
         bottom: 25px;
-        &:active{
-            opacity: 0;
-        }
     }
     &--animation{
         position: absolute;
@@ -16,6 +13,7 @@
         right: 25px;
         bottom: 25px;
         background: $background-linear;
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 0;

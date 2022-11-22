@@ -1,6 +1,7 @@
 .search{
     background-color: $background-dark;
     &__content{
+        display: flex;
         justify-content: center;
         padding: 12px;
         font-size: 18px;
@@ -17,6 +18,9 @@
     &__element{
         text-align: center;
         padding-bottom: 10px;
+    }
+    p{
+        font-weight: 300;
     }
 }
 

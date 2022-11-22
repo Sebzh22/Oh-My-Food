@@ -1,19 +1,17 @@
 .filter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 40px;
     &__restaurant{
         position: relative;
         width: 350px;
-        margin: auto;
         background-color: $background-light;
         height: 80px;
-        margin-bottom: 20px;
+        margin: 0px 10px 20px 10px;
         border-radius: 25px;
         box-shadow: $shadow-primary;
-        &--number{
-            color: #ffffff;
-            font-weight: 400;
-            text-align: center;
-            padding-top: 2px;
-        }
+
         &--number-block{
             position: absolute;
             top: 26px;
@@ -22,6 +20,10 @@
             height: 25px;
             border-radius: 50px;
             background-color: $color-primary;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         &--icon{
             position: absolute;
@@ -45,10 +47,5 @@
                 color: $color-primary;
             }
         }
-    }
-    &--number-block{
-        width: 25px;
-        height: 25px;
-        background-color: $color-primary;
     }
 }

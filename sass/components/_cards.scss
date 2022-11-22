@@ -1,5 +1,9 @@
 .restaurant{
     background-color: $background-light;
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
     &__card{
         position: relative;
         width: 450px;
@@ -19,6 +23,9 @@
             padding: 8px 15px;
             color: #000000;
             line-height: 23px;
+        }
+        p{
+            font-weight: 300;
         }
     }
 }
