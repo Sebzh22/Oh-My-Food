@@ -21,7 +21,7 @@
     <!--Header-->
     <header>
         <div class="header">
-            <img src="images\logo\ohmyfood.png" alt="logo Oh my Food" class="header__img">
+            <img src="images/logo/ohmyfood.png" alt="logo Oh my Food" class="header__img">
         </div>
 
     </header>
@@ -47,11 +47,9 @@
                 Découvrez des restaurants d'exception, sélectionnés par nos soins.
             </p>
             
-            <a href="#restaurant__list" class="">
-                <button type="button" class="btn">
+                <button type="button" onclick="window.location.href = '#restaurant__list'" class="btn">
                     Explorer nos restaurants
                 </button>
-            </a>          
         </section>
 
         <section class="wrapper functioning">
@@ -90,7 +88,7 @@
             
         </section>
 
-        <section class="restaurant wrapper">
+        <section id="restaurant__list" class="restaurant wrapper">
             <h2>
                 Restaurants
             </h2>
