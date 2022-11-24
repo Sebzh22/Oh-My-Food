@@ -46,8 +46,7 @@ p {
 }
 
 .header {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   padding: 15px;
 }
 .header__img {
@@ -64,14 +63,18 @@ p {
   background-color: #353535;
   padding-bottom: 20px;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .footer__title {
   padding: 20px 0 10px 0;
 }
 .footer__nav {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .footer a {
   color: white;
@@ -86,12 +89,15 @@ p {
 }
 .footer__list {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   align-items: center;
 }
 
 @media all and (min-width: 1024px) {
   .footer {
     flex-direction: row;
+    align-items: center;
   }
   .footer__nav {
     width: 85%;
@@ -104,7 +110,9 @@ p {
 }
 .search__content {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
   padding: 12px;
   font-size: 18px;
   font-weight: 500;
@@ -132,9 +140,9 @@ p {
   position: fixed;
   animation: load 3s ease-in-out forwards;
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   z-index: 1;
 }
 .loader__animation {
@@ -204,7 +212,9 @@ p {
 }
 .restaurant__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 .restaurant__card {
   position: relative;
@@ -240,8 +250,8 @@ p {
   background-color: #99E2D0;
   color: #2b987d;
   font-size: 18px;
-  font-weight: 700;
-  padding: 7px 14px;
+  font-weight: bold;
+  padding: 8px 15px;
 }
 
 @media all and (min-width: 768px) {
@@ -251,8 +261,9 @@ p {
 }
 .filter {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
+  align-items: center;
   padding-bottom: 40px;
 }
 .filter__restaurant {
@@ -274,6 +285,7 @@ p {
   background-color: #9356DC;
   color: #ffffff;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
@@ -314,8 +326,6 @@ p {
   object-fit: cover;
 }
 .menu__title {
-  display: flex;
-  justify-content: space-between;
   padding-top: 20px;
   font-size: 27px;
 }
@@ -326,8 +336,9 @@ p {
 }
 .menu__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
+  align-items: center;
 }
 .menu__card {
   background-color: #ffffff;
@@ -344,7 +355,7 @@ p {
   justify-content: space-between;
   cursor: pointer;
   overflow: hidden;
-  animation: transition 1000ms ease-in-out forwards;
+  animation: transition 1000ms ease-in-out both;
 }
 .menu__card--1 {
   animation-delay: 300ms;
@@ -384,8 +395,9 @@ p {
 }
 .menu__card--detail {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: space-between;
+  align-items: flex-start;
   width: 300px;
   margin: 10px 0 12px 10px;
 }
@@ -407,8 +419,9 @@ p {
   bottom: 0;
   right: 0;
   display: flex;
-  align-items: center;
+  flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
   font-size: 25px;
   width: 65px;
   height: 100%;

@@ -1,8 +1,7 @@
 .restaurant{
     background-color: $background-light;
     &__list{
-        display: flex;
-        flex-wrap: wrap;
+        @include flexible();
     }
     &__card{
         position: relative;
@@ -38,8 +37,8 @@
         background-color: $color-tertiary;
         color: $darken-color-tertiary;
         font-size: 18px;
-        font-weight: 700;
-        padding: 7px 14px;
+        font-weight: bold;
+        padding: 8px 15px;
     }
 }
 

@@ -4,10 +4,7 @@
     height: 100%;
     position: fixed;
     animation: load 3s ease-in-out forwards;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flexible(flex, column);
     z-index: 1;
     &__animation{
         width: 100px;

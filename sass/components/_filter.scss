@@ -1,7 +1,5 @@
 .filter{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include flexible(flex, row, wrap, space-around);
     padding-bottom: 40px;
     &__restaurant{
         position: relative;
@@ -21,9 +19,7 @@
             border-radius: 50px;
             background-color: $color-primary;
             color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flexible();
         }
         &--icon{
             position: absolute;

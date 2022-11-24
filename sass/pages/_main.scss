@@ -1,8 +1,7 @@
 .search{
     background-color: $background-dark;
     &__content{
-        display: flex;
-        justify-content: center;
+        @include flexible;
         padding: 12px;
         font-size: 18px;
         font-weight: 500;

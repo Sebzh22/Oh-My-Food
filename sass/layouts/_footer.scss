@@ -1,14 +1,12 @@
 .footer{
     background-color: #353535;
     padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
+    @include flexible(flex, column, nowrap, flex-start, flex-start);
     &__title{
         padding: 20px 0 10px 0;
     }
     &__nav{
-        display: flex;
-        flex-direction: column;
+        @include flexible(flex, column, nowrap, flex-start, flex-start);
     }
     a{
         color: white;
@@ -22,14 +20,14 @@
         width: 25px;
     }
     &__list{
-        display: flex;
-        align-items: center;
+        @include flexible;
     }
    }
 
  @media all and (min-width: $large){
      .footer{
         flex-direction: row;
+        align-items: center;
         &__nav{
             width: 85%;
             flex-direction: row;

@@ -13,8 +13,6 @@
     }
 
     &__title{
-        display: flex;
-        justify-content: space-between;
         padding-top: 20px;
         font-size: 27px;
     }
@@ -26,9 +24,7 @@
     }
 
     &__list{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        @include flexible(flex, row, wrap, space-around, center);
     }
 
     &__card{
@@ -46,7 +42,7 @@
         justify-content: space-between;
         cursor: pointer;
         overflow: hidden;
-        animation: transition 1000ms ease-in-out forwards;
+        animation: transition 1000ms ease-in-out both;
         @for $i from 1 through 12{
             &--#{$i}{
                 animation-delay: 300ms * $i;
@@ -56,9 +52,7 @@
         
 
         &--detail{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            @include flexible(flex, column, nowrap, space-between, flex-start);
             width: 300px;
             margin: 10px 0 12px 10px;
             p{
@@ -81,9 +75,7 @@
             top: 0;
             bottom: 0;
             right: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexible();
             font-size: 25px;
             width: 65px;
             height: 100%;
