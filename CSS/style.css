@@ -161,6 +161,10 @@ p {
   color: #353535;
   padding-bottom: 25px;
 }
+.loader img {
+  padding-bottom: 25px;
+  width: 350px;
+}
 
 @keyframes loading {
   0% {
