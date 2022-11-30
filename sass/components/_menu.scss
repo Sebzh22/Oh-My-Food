@@ -24,7 +24,8 @@
     }
 
     &__list{
-        @include flexible(flex, row, wrap, space-around, center);
+        @include flexible(flex, row, wrap, flex-start);
+        padding-left:20px;
     }
 
     &__card{
@@ -132,12 +133,13 @@
         opacity: 0;
         right: 50px;
         top: 25px;
-        background: -webkit-linear-gradient(210deg, #9356DC, #FF79DA);
+        background: $background-linear;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 0;
-        &:active{
+        transition: opacity 300ms;
+        &:hover{
             opacity: 1;
         }
 }
@@ -147,19 +149,6 @@
     margin-top: 40px;
 }
 
-// @media all and (min-width:$medium){
-//     .menu__card{
-//             width:45%;
-//     }
-// }
-
-// @media all and (min-width:$large){
-//     .menu__presentation{
-//         display: flex;
-//         justify-content: space-between;
-//         width: 100%;
-//     }
-// }
 
 @keyframes transition {
     0%{
