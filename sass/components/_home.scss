@@ -1,0 +1,24 @@
+.search{
+    background-color: $background-dark;
+    &__content{
+        @include flexible;
+        padding: 12px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__icon{
+        padding-right: 15px;
+    }
+}
+
+.description{
+    background-color: $background-light;
+    padding: 50px 0;
+    &__element{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    p{
+        font-weight: 300;
+    }
+}
