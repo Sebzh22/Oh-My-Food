@@ -9,7 +9,8 @@
     &__img{
         width: 100%;
         height: 300px;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
 
     &__title{
@@ -31,6 +32,8 @@
     &__card{
         background-color: #ffffff;
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         color: #000000;
         max-width: 380px;
@@ -39,14 +42,19 @@
         margin-right: 20px;
         margin-top: 10px;
         width: 100%;
-        box-shadow: $shadow-primary;
-        justify-content: space-between;
+        -webkit-box-shadow: $shadow-primary;
+                box-shadow: $shadow-primary;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         cursor: pointer;
         overflow: hidden;
-        animation: transition 1000ms ease-in-out both;
+        -webkit-animation: transition 1000ms ease-in-out both;
+                animation: transition 1000ms ease-in-out both;
         @for $i from 1 through 12{
             &--#{$i}{
-                animation-delay: 300ms * $i;
+                -webkit-animation-delay: 300ms * $i;
+                        animation-delay: 300ms * $i;
             }
         }
 
@@ -66,9 +74,17 @@
             margin-bottom: 12px;
             width: 50px;
             font-weight: bold;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: flex-end;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
+            -webkit-transition: -webkit-transform 700ms;
+            transition: -webkit-transform 700ms;
+            -o-transition: transform 700ms;
             transition: transform 700ms;
+            transition: transform 700ms, -webkit-transform 700ms;
         }
 
         &--animation{
@@ -84,8 +100,14 @@
             color: #ffffff;
             border-radius: 0 15px 15px 0;
             opacity: 1;
-            transform: translateX(65px);
+            -webkit-transform: translateX(65px);
+                -ms-transform: translateX(65px);
+                    transform: translateX(65px);
+            -webkit-transition: -webkit-transform 700ms;
+            transition: -webkit-transform 700ms;
+            -o-transition: transform 700ms;
             transition: transform 700ms;
+            transition: transform 700ms, -webkit-transform 700ms;
         }
     }
 }
@@ -94,16 +116,23 @@
     width: 300px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    -webkit-transition: width 700ms;
+    -o-transition: width 700ms;
     transition: width 700ms;
 }
 
 .menu__card:hover > .menu__card--price{
-    transform: translateX(-65px);
+    -webkit-transform: translateX(-65px);
+        -ms-transform: translateX(-65px);
+            transform: translateX(-65px);
 }
 
 .menu__card:hover > .menu__card--animation{
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
 }
 
 .menu__card:hover .narrow{
@@ -138,6 +167,8 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 0;
+        -webkit-transition: opacity 300ms;
+        -o-transition: opacity 300ms;
         transition: opacity 300ms;
         &:hover{
             opacity: 1;
@@ -150,22 +181,51 @@
 }
 
 
-@keyframes transition {
+@-webkit-keyframes transition {
     0%{
-        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+                transform: translateY(10px);
         opacity: 0;
     }
     100%{
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
         opacity: 1;
+    }
+}
+
+
+@keyframes transition {
+    0%{
+        -webkit-transform: translateY(10px);
+                transform: translateY(10px);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes rotate {
+    to{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+    }
+    from{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
     }
 }
 
 @keyframes rotate {
     to{
-        transform: rotate(0deg)
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
     }
     from{
-        transform: rotate(360deg)
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
     }
 }

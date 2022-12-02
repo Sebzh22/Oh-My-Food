@@ -9,12 +9,16 @@
     border: none;
     border-radius: 50px;
     background: $background-linear;
-    box-shadow: $shadow-primary;
+    -webkit-box-shadow: $shadow-primary;
+            box-shadow: $shadow-primary;
     cursor: pointer;
+    -webkit-transition: all 1000ms;
+    -o-transition: all 1000ms;
     transition: all 1000ms;
     opacity: 1;
     &:hover{
         opacity: 0.7;
-        box-shadow: $shadow-hover;
+        -webkit-box-shadow: $shadow-hover;
+                box-shadow: $shadow-hover;
     }
 }
