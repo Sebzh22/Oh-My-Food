@@ -31,7 +31,6 @@
 
     &__card{
         background-color: #ffffff;
-        position: relative;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -61,30 +60,28 @@
         
 
         &--detail{
-            @include flexible(flex, column, nowrap, space-between, flex-start);
             width: 300px;
-            margin: 10px 0 12px 10px;
+            margin: 10px 0 0 10px;
             p{
                 font-size: 16px;
                 font-weight: 300;
+                position: absolute;
+                bottom: 12px;
             }   
         }
         
         &--price{
-            margin-bottom: 12px;
             width: 50px;
             font-weight: bold;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: end;
-                -ms-flex-align: end;
-                    align-items: flex-end;
             -webkit-transition: -webkit-transform 700ms;
             transition: -webkit-transform 700ms;
             -o-transition: transform 700ms;
             transition: transform 700ms;
             transition: transform 700ms, -webkit-transform 700ms;
+            span{
+                position: absolute;
+                bottom: 12px;
+            }
         }
 
         &--animation{
@@ -92,13 +89,12 @@
             top: 0;
             bottom: 0;
             right: 0;
-            @include flexible();
+            // @include flexible();
             font-size: 25px;
             width: 65px;
             height: 100%;
             background-color: $color-tertiary;
             color: #ffffff;
-            border-radius: 0 15px 15px 0;
             opacity: 1;
             -webkit-transform: translateX(65px);
                 -ms-transform: translateX(65px);
@@ -110,6 +106,12 @@
             transition: transform 700ms, -webkit-transform 700ms;
         }
     }
+}
+
+.icon--rotate{
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 .narrow{
@@ -136,7 +138,7 @@
 }
 
 .menu__card:hover .narrow{
-    width: 235px;
+    width: 240px;
 }
 
  .menu__card:hover .icon--rotate{
@@ -178,6 +180,28 @@
 .menu__btn{
     width: 200px;
     margin-top: 40px;
+}
+
+@media all and (max-width: 385px){
+    .menu__card{
+        max-width: 320px;
+        &--detail{
+            width: 200px;
+            font-size: 13px;
+        }
+    }
+    .narrow{
+        width: 250px;
+    }
+    .menu__card:hover .narrow{
+        width: 185px;
+    }
+}
+
+@media all and (min-width: 385px) and (max-width: 420px){
+    .menu__card:hover .narrow{
+        width: 200px;
+    }
 }
 
 
