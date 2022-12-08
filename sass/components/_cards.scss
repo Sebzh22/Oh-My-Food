@@ -25,6 +25,7 @@
             -o-object-fit: cover;
                object-fit: cover;
             border-radius: 25px 25px 0 0;
+            object-position: bottom;
         }
         &--content{
             -webkit-box-pack: justify;
@@ -38,6 +39,10 @@
             font-weight: 300;
         }
     }
+}
+
+.img-position{
+    object-position: 0% 60%;
 }
 
 .new{

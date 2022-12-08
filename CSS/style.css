@@ -301,6 +301,7 @@ p {
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 25px 25px 0 0;
+  object-position: bottom;
 }
 .restaurant__card--content {
   -webkit-box-pack: justify;
@@ -312,6 +313,10 @@ p {
 }
 .restaurant__card p {
   font-weight: 300;
+}
+
+.img-position {
+  object-position: 0% 60%;
 }
 
 .new {
